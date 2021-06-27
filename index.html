@@ -1,0 +1,83 @@
+<html>
+
+<head>
+  <title>Image recognition</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+  <div class="container">
+
+    <center>
+      <h1 class="btn btn-default">Image Recognition</h1>
+      <br><br>
+
+      <p style="font-size: 22px;">Model is trained to identify the following objects:</p>
+
+      <br>
+      <br>
+      <b class="i_p">
+        Scissor
+        <hr>
+        Beauty Set
+        <hr>
+        Watch
+        <hr>
+        Notebook
+        <hr>
+      </b>
+
+      <label>Webcam View - </label>
+      <span class="web_res">
+        <div id="cam">
+
+        </div>
+
+        <br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <br><br>
+
+        <br><br>
+        <div id="result">
+
+        </div>
+        <br><br>
+      </span>
+      <br>
+      <br>
+
+      
+      <span class="button">
+        <button class="btn btn-danger" onclick="take_snapshot()">Capture</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+        <button class="btn btn-success" onclick="check()">Identify</button>
+      </span>
+
+      <br>
+      <br>
+      <br>
+      <p style="font-size: 22px;">Object : <span id="o"></span></p>
+      <p style="font-size: 22px;">Accuracy : <span id="a"></span></p>
+    </center>
+
+  </div>
+  <script src="main.js"></script>
+
+</body>
+
+</html>

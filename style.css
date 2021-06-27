@@ -1,0 +1,35 @@
+body {
+    background-color: aqua;
+}
+
+.btn-default {
+    width: 30%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.i_p {
+    font-size: 18px;
+    color: orangered;
+   
+   
+}
+
+#cam{
+    border: rgb(68, 68, 68) solid 4px;
+    height: 344px;
+    width: 344px;
+    margin-left: 150px;
+
+}
+
+#result{
+    border: rgb(68, 68, 68) solid 4px;
+    height: 344px;
+    width: 344px;
+    
+}
+
+.web_res{
+    display: flex;
+}
